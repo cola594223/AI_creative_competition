@@ -215,11 +215,11 @@ footer a:hover {
 }
 
 .input.active span::before {
-	font-size: 13px;
+	font-size: 20px;
 }
 
 .input.active span::after {
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .input.active~.input,
@@ -249,7 +249,7 @@ footer a:hover {
 	content: attr(data-year);
 	top: 25px;
 	transform: translateX(-50%);
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .input span::before {
@@ -257,7 +257,7 @@ footer a:hover {
 	top: -65px;
 	width: 70px;
 	transform: translateX(-5px) rotateZ(-45deg);
-	font-size: 12px;
+	font-size: 20px;
 	text-indent: -10px;
 }
 
