@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a href="." style="color: #2687c0;font-size: 20pt;font-weight: bold;">
+            <a href="" style="color: #2687c0;font-size: 20pt;font-weight: bold;">
                 <span class="">2022 AI創意競賽</span>
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#hamburg">
@@ -24,22 +24,66 @@
             <div class="collapse navbar-collapse" id="hamburg">
                 <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">首頁</a>
+                        <a class="nav-link" href="">首頁</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#news">競賽須知</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./connection">競賽時程</a>
+                        <a class="nav-link" href="#schedule">競賽時程</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-outline-primary">
+                            <a href="https://reurl.cc/QbK0Y9">報名</a>
+                        </button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div>
+    <div class="banner">
         <img class="header_picture" src="image/02-01.png" alt="">
+        <!-- <button type="button" class="btn btn-outline-secondary btn-lg">報名</button> -->
     </div>
+
+    <h1 id="schedule" class="font-weight-bold text-center mb-5">競賽時程</h1>
+
+    <table width="800" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFF; font-size: 18px; "
+        align="center">
+        <tbody>
+            <tr>
+                <td align="center" valign="top">
+                    <div class="flex-parent">
+                        <div class="input-flex-container">
+                            <div class="input active">
+                                <span data-year="09/26" data-info="報名開始"></span>
+                            </div>
+                            <div class="input ">
+                                <span data-year="10/17" data-info="報名截止"></span>
+                            </div>
+                            <div class="input ">
+                                <span data-year="10/17" data-info="初賽"></span>
+                            </div>
+                            <div class="input ">
+                                <span data-year="10/28" data-info="公告初賽結果並告知複賽時程及比賽辦法"></span>
+                            </div>
+                            <div class="input ">
+                                <span data-year="11/05" data-info="決賽"></span>
+                            </div>
+                        </div>
+                        <div class="description-flex-container">
+                            <p class="active">歡迎大家踴躍報名！</p>
+                            <p class="">報名時間至23:59止</p>
+                            <p class="">努力評分中</p>
+                            <p class="">將會個別通知入圍小組複賽時程及比賽辦法</p>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <div id="news" class="news py-5">
         <div class="container">
@@ -105,6 +149,13 @@
                             </li>
                         </ul>
                     </ol>
+                    <h5>五、獎金:</h5>
+                    <p>
+                        第一名：禮卷 30,000 元(資訊組、非資訊組各一組)<br>
+                        第二名：禮卷 20,000 元(資訊組、非資訊組各一組)<br>
+                        第三名：禮卷 10,000 元(資訊組、非資訊組各一組)<br>
+                        佳作　：禮卷 5,000 元(資訊組、非資訊組各三組)
+                    </p>
                 </div>
             </div>
         </div>
@@ -140,5 +191,20 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        var inputs = $('.input');
+        var paras = $('.description-flex-container').find('p');
+        $(inputs).click(function () {
+            var t = $(this),
+                ind = t.index(),
+                matchedPara = $(paras).eq(ind);
+
+            $(t).add(matchedPara).addClass('active');
+            $(inputs).not(t).add($(paras).not(matchedPara)).removeClass('active');
+        });
+    });
+</script>
 
 </html>
