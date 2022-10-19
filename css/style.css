@@ -48,7 +48,7 @@ a {
 }
 
 .apply-btn:hover {
-	color: white;
+	color: white !important;
 }
 
 
