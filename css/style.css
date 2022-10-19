@@ -43,8 +43,8 @@ a {
 	color: white;
 }
 
-a:visited {
-	color: #4169e1;
+.btn-outline-primary {
+	color: #4169e1 !important;
 }
 
 /* .btn:hover a {
