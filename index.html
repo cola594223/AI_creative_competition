@@ -27,10 +27,13 @@
                         <a class="nav-link" href="">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#news">競賽須知</a>
+                        <a class="nav-link" onclick="backToIndex()" href="#news">競賽須知</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#schedule">競賽時程</a>
+                        <a class="nav-link" onclick="backToIndex()" href="#schedule">競賽時程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="showExample()" href="#example">決賽資料範例</a>
                     </li>
                     <li>
                         <button type="button" class="btn btn-outline-primary">
@@ -47,43 +50,68 @@
         <!-- <button type="button" class="btn btn-outline-secondary btn-lg">報名</button> -->
     </div>
 
-    <h1 id="schedule" class="font-weight-bold text-center mb-5">競賽時程</h1>
+    <div id="example">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="天機步可洩漏_天機道 - 陳虹凱.pdf" target="_blank" rel="noopener noreferrer"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="天機步可洩漏_作品介紹 - 陳虹凱.pdf" target="_blank" rel="noopener noreferrer"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="希望三萬元禮卷是我們的_ai乳癌預測系統 - Weber Wang.pdf" target="_blank" rel="noopener noreferrer"></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <table width="800" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFF; font-size: 18px; "
-        align="center">
-        <tbody>
-            <tr>
-                <td align="center" valign="top">
-                    <div class="flex-parent">
-                        <div class="input-flex-container">
-                            <div class="input">
-                                <span data-year="09/26" data-info="報名開始"></span>
+    <div id="schedule">
+        <h1 class="font-weight-bold text-center mb-5">競賽時程</h1>
+
+        <table width="800" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFF; font-size: 18px; "
+            align="center">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top">
+                        <div class="flex-parent">
+                            <div class="input-flex-container">
+                                <div class="input">
+                                    <span data-year="09/26" data-info="報名開始"></span>
+                                </div>
+                                <div class="input ">
+                                    <span data-year="10/17" data-info="報名截止"></span>
+                                </div>
+                                <div class="input active">
+                                    <span data-year="10/17" data-info="初賽"></span>
+                                </div>
+                                <div class="input ">
+                                    <span data-year="10/28" data-info="初賽結果"></span>
+                                </div>
+                                <div class="input ">
+                                    <span data-year="11/05" data-info="決賽"></span>
+                                </div>
                             </div>
-                            <div class="input ">
-                                <span data-year="10/17" data-info="報名截止"></span>
-                            </div>
-                            <div class="input active">
-                                <span data-year="10/17" data-info="初賽"></span>
-                            </div>
-                            <div class="input ">
-                                <span data-year="10/28" data-info="初賽結果"></span>
-                            </div>
-                            <div class="input ">
-                                <span data-year="11/05" data-info="決賽"></span>
+                            <div class="description-flex-container">
+                                <p class="">歡迎大家踴躍報名！</p>
+                                <p class="active">報名時間至23:59止</p>
+                                <p class="">努力評分中</p>
+                                <p class="">公告初賽結果並告知複賽時程及比賽辦法</p>
                             </div>
                         </div>
-                        <div class="description-flex-container">
-                            <p class="">歡迎大家踴躍報名！</p>
-                            <p class="active">報名時間至23:59止</p>
-                            <p class="">努力評分中</p>
-                            <p class="">公告初賽結果並告知複賽時程及比賽辦法</p>
-                        </div>
-                    </div>
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 
     <div id="news" class="news py-5">
         <div class="container">

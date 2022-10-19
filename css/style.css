@@ -26,6 +26,10 @@ a {
 	height: 100px;
 }
 
+#example {
+	display: none;
+}
+
 .my_input {
 	text-align: center;
 	border: 1px solid white;
@@ -82,14 +86,17 @@ footer a:hover {
 	.title_text {
 		display: none;
 	}
+
 	.mobile {
 		display: block !important;
 	}
+
 	.pc {
 		display: none;
 	}
+
 	.news .card {
-		padding: 25px 40px !important; 
+		padding: 25px 40px !important;
 	}
 }
 
@@ -129,11 +136,11 @@ footer a:hover {
 }
 
 .glass {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: none;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	border: none;
 }
 
 .flex-parent {
