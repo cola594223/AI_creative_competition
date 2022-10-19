@@ -43,9 +43,9 @@ a {
 	color: white;
 }
 
-/* .btn a:visited {
+a:visited {
 	color: #4169e1;
-} */
+}
 
 /* .btn:hover a {
 	color: white;
