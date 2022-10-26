@@ -96,7 +96,11 @@ footer a:hover {
 	}
 
 	.news .card {
-		padding: 25px 40px !important;
+		padding: 25px 20px !important;
+	}
+
+	.news .card ul {
+		margin: 0px;
 	}
 }
 
