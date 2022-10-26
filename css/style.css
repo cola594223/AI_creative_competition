@@ -82,7 +82,7 @@ footer a:hover {
 	color: white;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
 	.title_text {
 		display: none;
 	}
